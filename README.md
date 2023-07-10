@@ -14,6 +14,11 @@ Environment:
 ```
 python=3.7
 pytorch=1.6
+persim==0.3.1
+numpy==1.21.5
+ot==0.8.1
+scipy==1.7.3
+ripser==0.6.1
 ```
 
 ## Steps to compute KP
