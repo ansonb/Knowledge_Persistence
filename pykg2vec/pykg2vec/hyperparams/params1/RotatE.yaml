@@ -1,0 +1,46 @@
+model_name: "RotatE"
+datasets:
+  - dataset: "fb15k_237"
+    parameters:
+      learning_rate: 0.1
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 9.0
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      alpha: 1.0
+      neg_rate: 1
+  - dataset: "freebase15k"
+    parameters:
+      learning_rate: 0.1
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 24.0
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      alpha: 1.0
+      neg_rate: 1
+  - dataset: "wn18_rr"
+    parameters:
+      learning_rate: 0.1
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 6.0
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      alpha: 0.5
+      neg_rate: 1
+  - dataset: "wn18"
+    parameters:
+      learning_rate: 0.1
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 6.0
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      alpha: 0.5
+      neg_rate: 1

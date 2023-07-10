@@ -1,0 +1,50 @@
+model_name: "ConvKB"
+datasets:
+  - dataset: "fb15k_237"
+    parameters:
+      lmbda: 0.0001
+      filter_sizes: [1, 2]
+      num_filters: 50
+      learning_rate: 0.1
+      optimizer: "adam"
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      neg_rate: 1
+      sampling: "adversarial_negative_sampling"
+  - dataset: "freebase15k"
+    parameters:
+      lmbda: 0.0001
+      filter_sizes: [1, 2]
+      num_filters: 50
+      learning_rate: 0.1
+      optimizer: "adam"
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      neg_rate: 1
+      sampling: "adversarial_negative_sampling"
+  - dataset: "wn18rr"
+    parameters:
+      lmbda: 0.0001
+      filter_sizes: [1, 2]
+      num_filters: 50
+      learning_rate: 0.1
+      optimizer: "adam"
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      neg_rate: 1
+      sampling: "adversarial_negative_sampling"
+  - dataset: "wn18"
+    parameters:
+      lmbda: 0.0001
+      filter_sizes: [1, 2]
+      num_filters: 50
+      learning_rate: 0.1
+      optimizer: "adam"
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      neg_rate: 1
+      sampling: "adversarial_negative_sampling"

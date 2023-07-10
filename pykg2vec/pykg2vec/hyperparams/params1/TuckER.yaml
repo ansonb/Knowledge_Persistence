@@ -1,0 +1,66 @@
+model_name: "TuckER"
+datasets:
+  - dataset: "freebase15k"
+    parameters:
+      learning_rate: 0.1
+      rel_hidden_size: 50
+      ent_hidden_size: 50
+      input_dropout: 0.3
+      hidden_dropout1: 0.4
+      hidden_dropout2: 0.5
+      label_smoothing: 0
+      l1_flag: True
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+  - dataset: "wn18_rr"
+    parameters:
+      learning_rate: 0.1
+      rel_hidden_size: 50
+      ent_hidden_size: 50
+      input_dropout: 0.3
+      hidden_dropout1: 0.4
+      hidden_dropout2: 0.5
+      label_smoothing: 0
+      l1_flag: True
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+  - dataset: "fb15k_237"
+    parameters:
+      learning_rate: 0.1
+      rel_hidden_size: 50
+      ent_hidden_size: 50
+      input_dropout: 0.3
+      hidden_dropout1: 0.4
+      hidden_dropout2: 0.5
+      label_smoothing: 0
+      l1_flag: True
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+  - dataset: "wn18"
+    parameters:
+      learning_rate: 0.1
+      rel_hidden_size: 50
+      ent_hidden_size: 50
+      input_dropout: 0.3
+      hidden_dropout1: 0.4
+      hidden_dropout2: 0.5
+      label_smoothing: 0
+      l1_flag: True
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001

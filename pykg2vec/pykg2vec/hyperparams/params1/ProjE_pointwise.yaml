@@ -1,0 +1,42 @@
+model_name: "ProjE_pointwise"
+datasets:
+  - dataset: "fb15k_237"
+    parameters:
+      learning_rate: 0.1
+      hidden_dropout: 0.5
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      lmbda: 0.0001
+  - dataset: "freebase15k"
+    parameters:
+      learning_rate: 0.1
+      hidden_dropout: 0.5
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      lmbda: 0.0001
+  - dataset: "wn18_rr"
+    parameters:
+      learning_rate: 0.1
+      hidden_dropout: 0.5
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      lmbda: 0.0001
+  - dataset: "wn18"
+    parameters:
+      learning_rate: 0.1
+      hidden_dropout: 0.5
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      lmbda: 0.0001            

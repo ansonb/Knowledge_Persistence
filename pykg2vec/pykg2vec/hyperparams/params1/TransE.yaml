@@ -1,0 +1,54 @@
+model_name: "TransE"
+datasets:
+  - dataset: "fb15k_237"
+    parameters:
+      learning_rate: 1.0
+      l1_flag: True
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 5.00
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+
+  - dataset: "freebase15k"
+    parameters:
+      learning_rate: 0.01
+      l1_flag: True
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 1.00
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+
+  - dataset: "wn18_rr"
+    parameters:
+      learning_rate: 0.1
+      l1_flag: True
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 6.00
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+
+  - dataset: "wn18"
+    parameters:
+      learning_rate: 0.1
+      l1_flag: True
+      hidden_size: 50
+      batch_size: 50
+      epochs: 100
+      margin: 6.00
+      optimizer: "adam"
+      sampling: "adversarial_negative_sampling"
+      neg_rate: 1
+      lmbda: 0.0001
+
